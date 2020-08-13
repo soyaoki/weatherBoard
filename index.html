@@ -104,8 +104,36 @@
       <a href="javascript:" id="btnReload" class="settings__update"></a>
     </div>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!--
+    <script>
+      if(typeof jQuery != "undefined"){ //jQueryの読み込み確認
+        $(function(){
+            alert('jQuery is ready.')
+        });
+      }else{
+        $(function(){
+          alert('jQuery is not ready.')
+        });
+      }
+    </script>
+  -->
+
     <script src="./script.js"></script>
+
+  <!--
+    <script>
+      window.onload=function(){
+        var script = document.createElement('script');
+        script.src = "./script.js";
+        script.onload = function() {
+          alert("読み込み完了");
+        }
+        document.getElementsByTagName("body")[0].appendChild(script);
+      }
+    </script>
+  -->
+
   </body>
 </html>
