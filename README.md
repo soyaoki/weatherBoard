@@ -7,7 +7,7 @@ Get OpenWeatherMap API Key and City ID.Copy to `const APIkey`, `const city` in `
 ### css compiled by Gulp.
 ```
 npm install
-gulp watch
+gulp
 ```
 
 ## Using
