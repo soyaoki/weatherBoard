@@ -169,11 +169,18 @@ function showTrafficSignal(){
   var baseDate = new Date(2017,0,15,22,30);
   var nowDate = new Date();
   var diff = nowDate.getTime() - baseDate.getTime();
-  var remain = diff%((2*60)*1000);
-  if(remain>20000){
+
+  var interval = 2*60;
+  var remain = diff%(interval*1000);
+
+  var green = 20;
+  if(remain>green*1000){
     $('.triffic_light').children('img').attr('src', 'stop2.png');
+    $('#leftTime').text("Red to Green : " + Math.floor(interval - remain/1000) + "[s]");
   }else{
     $('.triffic_light').children('img').attr('src', 'go2.png');
+    $('#leftTime').text("Green to Red : " + Math.floor(20 - remain/1000) + "[s]");
   }
-  console.log(remain);
+
+
 }
