@@ -73,14 +73,14 @@ body {
             justify-content: center; }
   .weather__icon {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+        -ms-flex: 0 0 35%;
+            flex: 0 0 35%;
     font-size: 200px;
     text-align: center; }
   .weather__meta {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%; }
+        -ms-flex: 0 0 35%;
+            flex: 0 0 35%; }
     .weather__meta i.wi {
       margin-right: 10px; }
   .weather__text {
@@ -91,7 +91,7 @@ body {
     font-size: 40px; }
   .weather__cloudy {
     font-size: 40px;
-    margin-left: 60px; }
+    margin-left: 30px; }
   .weather__timeline {
     margin-top: 50px; }
 
@@ -108,18 +108,22 @@ body {
     padding-right: 30px;
     text-align: right;
     vertical-align: middle;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: normal; }
+  .timeline__todayText {
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 10px; }
   .timeline__tomorrowText {
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 10px; }
   .timeline__content {
     padding-right: 70px;
     padding-left: 60px;
     vertical-align: middle; }
   .timeline__icon {
-    font-size: 80px;
+    font-size: 70px;
     vertical-align: sub; }
     .timeline__icon > i:not(.wi):before {
       content: "--"; }
@@ -127,7 +131,7 @@ body {
     display: inline-block;
     width: 145px;
     text-align: right;
-    font-size: 45px; }
+    font-size: 40px; }
     .timeline__cloudy > span {
       font-size: 60px; }
 
@@ -148,3 +152,11 @@ body {
     color: #FFF;
     opacity: 0.4;
     text-decoration: none; }
+
+  .triffic_light {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+    width: 120px;
+    height: 210px;
+  }

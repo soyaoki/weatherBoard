@@ -7,6 +7,8 @@ $(function(){
   setInterval(showTodayWeather, 1000 * 60 * 60);
   setInterval(showTimelineWeather, 1000 * 60 * 60);
 
+  setInterval(showTrafficSignal, 1000);
+
   /* for debug */
   $('#btnReload').click(function(){
     location.reload();
@@ -161,4 +163,17 @@ function showTimelineWeather(){
     $('.timeline__icon i').removeClass().addClass('wi wi-na');
     $('.timeline__cloudy span').text('--');
   })
+}
+
+function showTrafficSignal(){
+  var baseDate = new Date(2017,0,15,22,30);
+  var nowDate = new Date();
+  var diff = nowDate.getTime() - baseDate.getTime();
+  var remain = diff%((2*60)*1000);
+  if(remain>20000){
+    $('.triffic_light').children('img').attr('src', 'stop2.png');
+  }else{
+    $('.triffic_light').children('img').attr('src', 'go2.png');
+  }
+  console.log(remain);
 }
